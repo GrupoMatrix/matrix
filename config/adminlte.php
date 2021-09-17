@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'PedidoCerto',
+    'title' => 'Matrix',
 
     'title_prefix' => '',
 
