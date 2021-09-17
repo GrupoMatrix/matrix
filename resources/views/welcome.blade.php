@@ -70,7 +70,7 @@
             <div class="content">
 
                 <div class="title m-b-md" >
-                   Hello Word!
+                   Hello Word, Olá Mundo!
                 </div>
             </div>
         </div>
