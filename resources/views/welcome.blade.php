@@ -70,7 +70,7 @@
             <div class="content">
 
                 <div class="title m-b-md" >
-                   Hello Word!
+                   Hello Word Matrix!
                 </div>
             </div>
         </div>
