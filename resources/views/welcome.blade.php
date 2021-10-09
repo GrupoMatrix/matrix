@@ -62,11 +62,10 @@
                 margin-bottom: 30px;
             }
         </style>
+        <link rel="stylesheet" href="/css/app.css">
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-
-
             <div class="content">
 
                 <div class="title m-b-md" >
