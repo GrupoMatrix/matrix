@@ -5,7 +5,7 @@
 
 ## Importando o Projeto
 1. git clone https://github.com/Marcoskisto/pedidoCerto.git
-2. cd pedidoCerto
+2. cd matrix
 3. composer install
 4. php artisan key:generate
 5. criar o Banco "pedidocerto", com user -homestead- e password -secret-
