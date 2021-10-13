@@ -1,0 +1,29 @@
+.body-login{
+    background-color: $grey-bold;
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    }
+    .form-login{
+        padding: 30px 16px;
+    }
+    .form-control{
+        padding: 20px 12px;
+        font-size: 16px;
+        background-color: #363D45;
+        border: 1px solid #363D45;
+        border-radius: 5px;
+    }
+    .btn-login{
+        padding: 10px;
+        width: 100%;
+        background-color: #FF9A00;
+        border: none;
+        border-radius: 5px;
+        color: $black-color;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}

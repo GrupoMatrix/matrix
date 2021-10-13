@@ -8,14 +8,25 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Restaurante D'Italia</title>
 
     <!-- Styles -->
+    @yield('styles')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-default navbar-static-top">
+    <div class="head-top">
+        <div class="d-flex align-items-center justify-content-center">
+            <a href="{{ url('/') }}">
+                <img src="{{ asset('images/ArrowLeft.png') }}">
+            </a>
+            <h1 class="title-head">
+                Restaurante D'Italia
+            </h1>
+        </div>
+
+
+        {{-- <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
 
@@ -69,12 +80,11 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-
-        @yield('content')
+        </nav> --}}
     </div>
-
+    @yield('content')
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

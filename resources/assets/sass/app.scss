@@ -8,6 +8,11 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-body{
-    background-color: blue;
-}
+//Components
+@import "components/header-top.scss";
+@import "components/login.scss";
+@import "components/welcome.scss";
+
+//Defaults
+@import "defaults/grids.scss";
+@import "defaults/space.scss";
