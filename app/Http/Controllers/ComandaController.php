@@ -60,7 +60,7 @@ class ComandaController extends Controller
         // select * pedidos da comanda $id
         $total = $pedidos->sum('preco_total');
         // calcula valor total da comanda
-        return view('comanda.show', compact('comanda'),compact('pedidos'),compact('item'))->with('total',$total);
+        return view('comanda.show', compact('comanda','pedidos'))->with('total',$total);
     }
 
     /**

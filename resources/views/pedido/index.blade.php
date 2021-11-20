@@ -32,12 +32,7 @@
                         <td>{{$pedido->titulo_prato}}</td>
                         <td>{{$pedido->quantidade}}</td>
                         <td>{{$pedido->status}} <i class="far fa-play-circle"></i></td>
-                      <td>
-                    <!--Botão de detalhes do registro
-                        <a href="{{ route('pedido.show', $pedido->id) }}" class="btn btn-xs btn-primary">
-                            <i class="fas fa-fx fa-eye"></i>
-                        </a>-->
-                    <!--Botão de Status PRONTO do PEDIDO-->
+                      <td> 
                         <a href="{{ route('statusPronto', $pedido->id) }}" class="btn btn-xs btn-success">
                             <i class="fas fa-fx fa-check"></i> DESPACHAR P/ MESA
                         </a>
@@ -88,12 +83,6 @@
                         <td>{{$pedido->quantidade}}</td>
                         <td>{{$pedido->status}} <i class="far fa-check-circle"></i></td>
                       <td>
-                    <!--Botão de detalhes do registro
-                        <a href="{{ route('pedido.show', $pedido->id) }}" class="btn btn-xs btn-primary">
-                            <i class="fas fa-fx fa-eye"></i>
-                        </a>
-                        -->
-                    <!--Botão de exclução do registro-->
                         <form action="{{ route('pedido.destroy', $pedido->id) }}" method="post" onsubmit="return confirm('Voce tem certeza de que quer excluir este registro ?');"
                         style="display: inline-block;">
                             <input type="hidden" name="_method" value="DELETE">

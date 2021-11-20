@@ -19,15 +19,16 @@ class PedidoController extends Controller
 
     public function index()
     {
-        //$pedidos = Pedido::all();
-        
+        //$pedidos = Pedido::all(); 
 
         $pedidos = DB::table('pedido')
+            ->select(['pedido.id', 'item.id as id_item', 'comanda.id as id_comanda', 'pedido.quantidade', 'pedido.status', 'item.titulo_prato', 'item.desc_prato', 'item.preco', DB::raw('(item.preco*pedido.quantidade) as preco_total') ])
             ->join('item','pedido.id_item','=','item.id')
             ->join('comanda','comanda.id','=','pedido.id_comanda')
-            ->select('pedido.*','item.*',DB::raw('(item.preco*pedido.quantidade) as preco_total'))
+            ->where('comanda.status', '!=', 'Paga')
          
             ->get();
+            //dd($pedidos);
         
         return view('pedido.index',compact('pedidos'));
         //return view('comanda.show', compact('comanda'),compact('pedidos'),compact('item'))->with('total',$total);
@@ -110,10 +111,10 @@ class PedidoController extends Controller
      * @param  \App\pedido  $pedido
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_pedido)
+    public function destroy($id)
     {
 
-        Pedido::destroy($id_pedido);
+        Pedido::destroy($id);
 //        $pedido = pedido::all();
 
         return redirect()->route('pedido.index');
