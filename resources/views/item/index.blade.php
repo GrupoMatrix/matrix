@@ -3,13 +3,12 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1><i class = "glyphicon glyphicon-menu-hamburger">Itens do Cardápio</i></h1>
+    <h1>Cardápio</h1>
 @stop
 
 @section('content')
     <div class="panel panel-default">
         <div class="panel-heading clearfix">
-            Relacao dos Pratos e Bebidas
             <div class="pull-right">
                 <a href="{{ route('item.index') }}" class="btn btn-info"><i class="fas fa-sync"></i> Atualizar a tela</a>
                 <a href="{{ route('item.create') }}" class="btn btn-success"><i class="fas fa-plus"></i> Inserir um Novo Item</a>

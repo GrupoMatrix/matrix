@@ -7,7 +7,7 @@
        <form class="form-login" action="/login" method="POST">
         {{csrf_field()}}
             <div class="form-floating mb-3">
-                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Usuário">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email">
            
             </div>
             <div class="form-floating mb-3">

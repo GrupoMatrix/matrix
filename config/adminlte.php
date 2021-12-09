@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Pedido</b>Certo',
+    'logo' => 'Restaurante DItalia',
 
-    'logo_mini' => '<b>P</b>edC',
+    'logo_mini' => 'DItalia',
 
     /*
     |--------------------------------------------------------------------------

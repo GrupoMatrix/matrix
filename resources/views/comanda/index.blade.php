@@ -3,13 +3,13 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1><i class = "glyphicon glyphicon-menu-hamburger">comandas Abertas</i></h1>
+    <h1>Comandas</h1>
+    {{-- <i class = "glyphicon glyphicon-menu-hamburger"></i> --}}
 @stop
 
 @section('content')
     <div class="panel panel-default">
         <div class="panel-heading clearfix">
-            Relação de comandas abertas
             <div class="pull-right">
                 <a href="{{ route('comanda.index') }}" class="btn btn-info"><i class="fas fa-sync"></i> Atualizar a tela</a>
                 <a href="{{ route('comanda.create') }}" class="btn btn-success"><i class="fas fa-plus"></i> Inserir nova comanda</a>

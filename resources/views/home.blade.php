@@ -3,9 +3,9 @@
 @section('title', 'Matrix')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Olá, {{auth()->user()->name }}! Login realizado com sucesso, para iniciar um novo atendimento, abra uma nova comanda!</h1>
 @stop
 
 @section('content')
-    <p>You are logged in!</p>
+    
 @stop
