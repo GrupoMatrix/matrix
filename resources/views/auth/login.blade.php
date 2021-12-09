@@ -7,11 +7,12 @@
        <form class="form-login" action="/login" method="POST">
         {{csrf_field()}}
             <div class="form-floating mb-3">
-                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="Email">
-           
+                <input type="email" name="email" value="{{ old('email') }}" class="form-control" id="floatingInput" placeholder="Email">
+                {!! $errors->first('email', '<div class="alert alert-error">:message</div>') !!}
             </div>
             <div class="form-floating mb-3">
-                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                <input type="password" name="password" value="{{ old('password') }}" class="form-control" id="floatingPassword" placeholder="Senha">
+                {!! $errors->first('password', '<div class="alert alert-error">:message</div>') !!}
             </div>
 
             <div class="d-grid">
