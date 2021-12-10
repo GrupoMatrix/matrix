@@ -12,7 +12,7 @@
 
     <!-- Styles -->
     @yield('styles')
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <style>
         .alert.alert-error{
             color: red;
@@ -93,6 +93,6 @@
     @yield('content')
     <!-- Scripts -->
     @yield('scripts')
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="/js/app.js" defer></script>
 </body>
 </html>
