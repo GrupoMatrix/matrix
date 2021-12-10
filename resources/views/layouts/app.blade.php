@@ -18,7 +18,19 @@
             color: red;
         }
         .main-header.sidebar-toggle:hover{
-            color: #3c8dbc;
+            color: #3c8dbc !important;
+        }
+
+        .main-header.sidebar-toggle:focus{
+            color: #3c8dbc !important;
+        }
+
+        .main-header.sidebar-toggle.fa5:before{
+            color: #3c8dbc !important;
+        }
+
+        .main-header.sidebar-toggle.fa5:before:focus{
+            color: #3c8dbc !important;
         }
     </style>
 </head>
