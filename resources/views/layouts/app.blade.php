@@ -13,6 +13,11 @@
     <!-- Styles -->
     @yield('styles')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        .alert.alert-error{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="head-top">

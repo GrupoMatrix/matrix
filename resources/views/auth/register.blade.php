@@ -8,17 +8,20 @@
        <form class="form-login" action="/register" method="POST">
         {{csrf_field()}}
         <div class="form-floating mb-3">
-            <input type="text" name="name" class="form-control" placeholder="Nome completo">
+            <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Nome completo">
+            {!! $errors->first('name', '<div class="alert alert-error">:message</div>') !!}
         </div>
             <div class="form-floating mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Email">
-           
+                <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Email">
+                {!! $errors->first('email', '<div class="alert alert-error">:message</div>') !!}
             </div>
             <div class="form-floating mb-3">
-                <input type="password" name="password" class="form-control" placeholder="Senha">
+                <input type="password" name="password" value="{{ old('password') }}" class="form-control" placeholder="Senha">
+                {!! $errors->first('password', '<div class="alert alert-error">:message</div>') !!}
             </div>
             <div class="form-floating mb-3">
-                <input type="password" name="password_confirmation" class="form-control" placeholder="Repetir Senha">
+                <input type="password" name="password_confirmation" value="{{ old('password_confirmation') }}" class="form-control" placeholder="Repititr Senha">
+                {!! $errors->first('password_confirmation', '<div class="alert alert-error">:message</div>') !!}
             </div>
 
             <div class="d-grid">
