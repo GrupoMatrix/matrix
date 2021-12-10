@@ -17,6 +17,9 @@
         .alert.alert-error{
             color: red;
         }
+        .main-header.sidebar-toggle:hover{
+            color: #3c8dbc;
+        }
     </style>
 </head>
 <body>
